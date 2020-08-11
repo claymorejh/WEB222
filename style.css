@@ -5,7 +5,7 @@ body {
 
 header {
   width: 100%;
-  background-color: #ede682;
+  background-color: #ffd5cd;
   font-family: 'Playfair Display', serif;
 }
 
@@ -93,6 +93,31 @@ li {
   color: black;
 }
 
+.return {
+  height: 50px;
+  width: 80px;
+  position: absolute;
+  z-index: 1;
+  top: 54px;
+  left: 0;
+  background-color: yellow;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.return a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  cursor: pointer;
+}
+
+.return a:hover {
+  color: black;
+}
+
 /* Style the main content */
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
@@ -106,6 +131,166 @@ footer {
   background-color: yellow;
 }
 
+.subscribe-form {
+  float: right;
+  width: auto;
+}
+
 .footer-email {
   border-style: none;
+}
+
+form {
+  width: 100%;
+}
+
+.form-field {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  display: inline;
+  font-size: 24px;
+}
+
+.form-field input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-field input::placeholder {
+  font-size: 24px;
+}
+
+.radio-label {
+  display: flex;
+}
+
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+input[type='radio'] {
+  float: left;
+  width: auto;
+  height: 32px;
+  margin: 5px;
+}
+
+.message-area {
+  width: 100%;
+  height: 150px;
+}
+
+.order-number {
+  display: none;
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+  .grid-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .card-container {
+    padding-top: 80px;
+  }
+  .grid-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    justify-content: center;
+  }
+  /* side bar */
+  .sidebar {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 54px;
+    left: 0;
+    background-color: yellow;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card-container {
+    padding-top: 80px;
+  }
+  .grid-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    width: 70%;
+    justify-content: center;
+  }
+  /* side bar */
+  .sidebar {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 54px;
+    left: 0;
+    background-color: yellow;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    cursor: pointer;
+    float: left;
+  }
+  label {
+    display: inline;
+    font-size: 18px;
+  }
+  .form-field input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+
+  input[type='radio'] {
+    float: left;
+    width: auto;
+    height: 32px;
+    margin: 5px;
+  }
 }

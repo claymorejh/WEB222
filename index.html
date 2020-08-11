@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="script.js"></script>
+    <title>WEB222 Store</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;700&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="script.js"></script>
-  <title>WEB222 Store</title>
-</head>
-
-<body>
-  <!--
+  <body>
+    <!--
       Part 1: Main Store Page
 
       Requirements:
@@ -22,17 +27,17 @@
       what the store is, what it sells, etc.  Use some images to try and draw
       the user in.  NOTE: place all your site's images in the `src/images/` directory.
     -->
-  <header>
-    <ul>
-      <li>
-        <img src="./images/logo.png" width="50px" height="50px">
-      </li>
-      <li class="store-name">
-        McBurgers
-      </li>
-    </ul>
-  </header>
-  <!--
+    <header>
+      <ul>
+        <li>
+          <img src="./images/logo.png" alt="logo" width="50" height="50" />
+        </li>
+        <li class="store-name">
+          McBurgers
+        </li>
+      </ul>
+    </header>
+    <!--
 
       2. Below the header, a multi-column layout of items you can purchase in the
       store.  You must have at least 10 items in your store, and at least 2
@@ -49,12 +54,12 @@
       Each item should be its own "card" (i.e., some kind of box around each item
       separating one from the next, with suitable whitespace between).
   -->
-  <div class="card-container">
-    <div id="cards" class="grid-cards">
-      <!-- javascript will generate items here -->
+    <div class="card-container">
+      <div id="cards" class="grid-cards">
+        <!-- javascript will generate items here -->
+      </div>
     </div>
-  </div>
-  <!--
+    <!--
       3. A sidebar (left or right, depending on your design) of the item layout
       section, showing the different categories of items in your store.  If a
       user clicks on one of the categories, use CSS and JavaScript to hide all
@@ -63,14 +68,15 @@
       obvious to the user that they are only seeing a partial list of items when
       you filter by category (i.e., use CSS and HTML to change things somehow).
   -->
-  <div class="sidebar">
-    <a id="btn-all">All</a>
-    <a id="btn-burgers">Burgers</a>
-    <a id="btn-treats">Treats</a>
-    <a id="btn-drinks">Drinks</a>
-  </div>
+    <div class="sidebar">
+      <a id="btn-all">All</a>
+      <a id="btn-burgers">Burgers</a>
+      <a id="btn-treats">Treats</a>
+      <a id="btn-drinks">Drinks</a>
+      <a id="contact" href="./contact.html">Contact</a>
+    </div>
 
-  <!--
+    <!--
 
       4. Below the items, a footer with the name of the store, any relevant links you
       need to give users, as well as a small HTML form for entering an Email
@@ -81,13 +87,20 @@
       address via formspree.io).  Make sure you setup your account on
       https://formspree.io/.
   -->
-  <footer>
-    <form action="https://formspree.io/xaypvalb" method="POST">
-      <input placeholder="Enter Your Email !!" class="footer-email" id="footer-email" type="text" name="email">
-      <button type="submit">Send</button>
-  </footer>
+    <footer>
+      <form action="https://formspree.io/xaypvalb" method="POST" class="subscribe-form">
+        <input
+          placeholder="Please Enter Your Email"
+          class="footer-email"
+          id="footer-email"
+          type="email"
+          name="email" required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </footer>
 
-  <!--
+    <!--
       5. Use two different Web Fonts for your store.  The titles should be different
       from any regular text.  Use a free font service like https://fonts.google.com/
       or any other that you choose.  You can also experiment with different font
@@ -95,11 +108,9 @@
       your design.
   -->
 
+    <!-- font works -->
 
-  <!-- font works -->
-
-
-  <!--
+    <!--
 
       6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
       3 colours (primary, secondary, accent), and use them throughout your site
@@ -110,11 +121,9 @@
       for everyone to read.
   -->
 
+    <!-- color works -->
 
-  <!-- color works -->
-
-
-  <!--
+    <!--
 
       7. Use modern CSS to help you achieve your layout.  For example, Flexbox
       and CSS Grid can help you create professional looking layouts.  Here
@@ -128,11 +137,9 @@
       for everything in your design).
   -->
 
+    <!-- modern CSS works, grid added -->
 
-  <!-- modern CSS works, grid added -->
-
-
-  <!--
+    <!--
 
       8. Make sure you don't use copyrighted materials from other sites.  If you use
       icons, fonts, images, etc., make sure you are legally permitted to reuse them,
@@ -143,9 +150,9 @@
         - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
   -->
 
-  <!-- images change required not mc donalds-->
+    <!-- images change required not mc donalds-->
 
-  <!--
+    <!--
 
       9. Make sure you reduce the download size of images you include in your
       store.  Users don't want to download 10s or 100s of megabytes of data, especially
@@ -163,6 +170,5 @@
       in software is to let someone who didn't build it try to use it!
       
     -->
-</body>
-
+  </body>
 </html>
